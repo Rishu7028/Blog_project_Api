@@ -5,7 +5,7 @@ from flask_jwt_extended import JWTManager, create_access_token, jwt_required, ge
 
 app = Flask(__name__)
 
-client = MongoClient("YOUR_MONGODB_URL")
+client = MongoClient("mongodb+srv://rishukumar2201180_db_user:YOUR_NEW_PASSWORD@YOUR_CLUSTER.mongodb.net/")
 db = client["blog_database"]
 
 users = db["users"]
